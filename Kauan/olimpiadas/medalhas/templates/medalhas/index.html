@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="{% static 'medalhas/styles.css' %}" />
 </head>
 <body>
-    <h1>Top 10 medalhistas:</h1>
+    <h1>Top 5 medalhistas:</h1>
     <h3>
-        <table border="1">
-            <tr>
-                <td> Brasil</td>
-                <td> Argentina</td>
-                <td> França</td>
-            </tr>
-        </table>
+            <ol>
+                <li><a href="{% url 'brasil' %}">Brasil</a></li>
+                <li><a href="{%url 'japao' %}">Japão</a></li>
+                <li><a href="{%url 'franca' %}">França</a></li>
+                <li><a href="{%url 'eua' %}">EUA</a></li>
+                <li><a href="{%url 'china' %}">China</a></li>
+            </ol>
     </h3>
 </body>
 </html>
